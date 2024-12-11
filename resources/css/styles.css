@@ -1,0 +1,216 @@
+/* CSS reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset,form,label,legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0 5%;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.title-container {
+    background: url('/resources/images/nasa_background_header.webp') no-repeat center center / cover;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    color: white;
+}
+.title-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.title-container p {
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.nav-bar {
+    background-color: black;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+.nav-bar ul{
+    list-style: none; /* verwijdert standaard bolletje bij list */
+    display: flex;
+    justify-content: center; /* centreert hele ul */
+    
+}
+.nav-bar li {
+    margin: 0 15px; 
+}
+.nav-bar a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none; /* verwijdert standaard underline */
+    font-weight: 600;
+}
+.nav-bar li:hover {
+    background-color: #555;
+}
+
+.section-container {
+    margin: 20px 0; /*Boven en onder: 20 pixels ruimte. Links en rechts: Geen ruimte (0 pixels).*/
+    box-sizing: border-box; /* Zorg ervoor dat de padding binnen de container blijft (voor img) */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.section-container h2 {
+    color: #131313;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #3f67d6;
+}
+
+.section-container img {
+    max-width: 500px;
+    object-fit: cover;
+    outline: 1px solid #3f67d6;
+    outline-offset: 10px;
+    border-radius: 5px;
+}
+#about{
+    display: flex;
+    width: 100%;
+    margin-right: 20px;
+    background-color: #e4e4e4;
+}
+#climate-change{
+    display:flex;
+    width: 100%;
+    background-color: #000000
+}
+#climate-change #text-Climate-change {
+    order: 1; /* Place the text first */
+}
+#climate-change img {
+    order: 2; /* Place the image second */
+}
+#text-about{
+    margin-right: 20px;
+}
+#text-Climate-change{
+    margin-left: 20px;
+    color: rgb(207, 207, 207);
+}
+#iot-solutions{
+    background-color: #ccc;
+}
+.columns{
+    display: flex ;
+}
+.column{
+    margin-right: 20px;
+}
+.column h3{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.contact-container{
+    display: flex;
+    gap: 30px;
+    margin: 0 15% ;
+    padding: 0 5%; 
+    outline: 2px solid #002385;
+    outline-offset: 20px;
+    border-radius: 5px; 
+    align-items: center; /* Center items vertically */
+}
+.contact-container h3{
+   font-size: larger;
+   font-weight: bold;
+   color: #002385;
+}
+.contact-container p{
+    margin: 40px 0;
+ }
+ #location{
+    margin-top: 20px;
+ }
+ .contact-details{
+    direction: rtl;
+    width: 50%;
+    margin: 0 auto;
+
+ }
+ .contact-form{
+    width: 50%;
+    margin: 0 auto;
+ }
+ .contact-container input{
+    margin: 20px 0;
+
+ }
+
+ .contact-form input,
+ .contact-form textarea {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     width: 75%;
+ }
+ .contact-form textarea{
+    width: 87%;
+ }
+i{
+    padding: 10px;
+ }
+button{
+    background-color: #002385;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #0636bb;
+    text-decoration: underline;
+}
+ .main-footer{
+    background-color: #131313;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+    text-align: center;
+ }
+ .back-to-top{
+    text-decoration: none;
+    background-color: #3f67d6;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 30px; /* Position it 20px from the bottom of the viewport */
+    right: 5%; /* zorgt dat button voldoet aan de 90% body limitaties */
+ }
+
+ 
